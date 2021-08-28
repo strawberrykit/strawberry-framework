@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+
+$GLOBALS['directory'] = __DIR__;
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require $GLOBALS['directory'] . '/vendor/autoload.php';
+
+use Strawberry\App;
+
+$app = new App();
+$app->runCommand($argv);

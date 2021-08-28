@@ -1,0 +1,22 @@
+{
+  "name": "strawberry-framework",
+  "version": "1.0.0",
+  "description": "Template for creating a new strawberry app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strawberrykit/strawberry-framework.git"
+  },
+  "author": "Ken Terrado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strawberrykit/strawberry-framework/issues"
+  },
+  "homepage": "https://github.com/strawberrykit/strawberry-framework#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
