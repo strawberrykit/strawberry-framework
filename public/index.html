@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app="strawberry">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>Welcome - Strawberry Framework</title>
-        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'></script>
-        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js'></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/rterrado/strawberry-js/dist/strawberry.1.0.0.js"></script>
         <script src='/scripts/app.js'></script>
-        <script src='/scripts/mainctrl.js'></script>
+        <link rel="stylesheet" href="/styles/strawberry.css">
     </head>
-    <body ng-controller="mainCtrl">
-        <loader></loader>
-        <profile-card data="$ctrl.profile"></profile-card>
+    <body data-scope="main">
+        <section id="__strloader" data-component="loader"></section>
+        <section id="__strpage" data-render="page">
+            {{firstName}}
+        </section>
     </body>
 </html>
